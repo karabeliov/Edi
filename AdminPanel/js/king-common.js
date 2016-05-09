@@ -397,7 +397,7 @@ $(document).ready(function(){
 	/********************************************/
 
 	var kingTour = new Tour({
-		basePath: "/dashboard/kingadmin-v1.5/", // please see documentation for this setting
+		//basePath: "/dashboard/kingadmin-v1.5/", 
 		steps: [
 			{
 				element: "#tour-searchbox",

@@ -9,8 +9,8 @@ GLOBAL STYLES
 -----------------------------------------*/
 
 html {
-    
-    font-size: 100%;        
+
+    font-size: 100%;
 }
 
 body {
@@ -21,6 +21,11 @@ body {
 	overflow-x: hidden !important;
 	line-height: 25px;
 	text-align: center;
+}
+
+#logo {
+  margin-top: -20px;
+  width: 80px;
 }
 
 /* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
@@ -50,7 +55,7 @@ i {
 	vertical-align: middle;
 }
 ul, ol {
-padding-left: 0 !important; 
+padding-left: 0 !important;
 }
 li {
     list-style: none;
@@ -328,11 +333,11 @@ h6 {
 	border-radius: 4px;
 	background: rgba(255,255,255, 0.95);
 }
- textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+ textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus {
     outline: 1 !important;
     outline-color: #e96656 !important;

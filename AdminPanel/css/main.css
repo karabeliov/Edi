@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/*	
+/*
 *	############################################################################
-*	
+*
 *	KINGADMIN Admin Dashboard Style
 *	---------------------------------------------------------------------
 *
 *	Version		1.5
 *	Author		The Develovers
 *	Copyright	Copyright 2014-2015 The Develovers
-*	
+*
 *	############################################################################
 */
 /* ========================================================================
@@ -3267,7 +3267,7 @@ table.fc-border-separate {
   display: none;
 }
 
-/*! X-editable - v1.5.1 
+/*! X-editable - v1.5.1
 * In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 * http://github.com/vitalets/x-editable
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */
@@ -3285,8 +3285,8 @@ table.fc-border-separate {
   /* overwriting bootstrap line-height. See #133 */
 }
 
-/* 
-  BS3 width:1005 for inputs breaks editable form in popup 
+/*
+  BS3 width:1005 for inputs breaks editable form in popup
   See: https://github.com/vitalets/x-editable/issues/393
 */
 .editableform .form-control {
@@ -13050,7 +13050,7 @@ div.DTCR_pointer {
  * Language:    Javascript
  * License:     GPL v2 / 3 point BSD
  * Project:     DataTables
- * 
+ *
  * Copyright 2009-2012 Allan Jardine, all rights reserved.
  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -13402,7 +13402,7 @@ div.DTTT_collection a.DTTT_button {
   line-height: 20px;
 }
 
-/* jsTree default theme (customized) 
+/* jsTree default theme (customized)
  * changed: all image assets url
  */
 .jstree-node,
