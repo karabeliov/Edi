@@ -1,0 +1,8 @@
+1. Atom Beautify
+2. Atom Typescript
+3. Autoclose Html
+4. Highlight Selected
+5. Linter
+6. Minimap
+7. Pigments
+8. Rest Client
