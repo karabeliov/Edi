@@ -273,9 +273,11 @@ $(document).ready(function(){
 
 	if( $('#visit-chart, #demo-donut-chart').length > 0 ) {
 		var data = [
-			{ label: "Direct",  data: 65},
-			{ label: "Referral",  data: 20},
-			{ label: "Others", data: 15}
+			{ label: "Шестици",  data: 9},
+			{ label: "Петици",  data: 6},
+			{ label: "Четворки", data: 2},
+			{ label: "Тройки", data: 1},
+			{ label: "Двойки", data: 0}
 		];
 
 		$.plot('#visit-chart, #demo-donut-chart', data, {
@@ -300,7 +302,7 @@ $(document).ready(function(){
 			grid: {
 				hoverable: true
 			},
-			colors: ["#d9d9d9", "#5399D6", "#d7ea2b"],
+			colors: ["#33ff22", "#5399D6", "yellow", "orange", "red"],
 		});
 	}
 

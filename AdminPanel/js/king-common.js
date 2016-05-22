@@ -218,8 +218,8 @@ $(document).ready(function(){
 		placement: 'top',
 		html: true,
 		trigger: 'hover',
-		title: '<i class="fa fa-book"></i> Quick Help',
-		content: "Help summary goes here. Options can be passed via data attributes <code>data-</code> or JavaScript. You can change the popover trigger to 'click' instead of 'hover'."
+		title: '<i class="fa fa-book"></i> Подскаска',
+		content: "Това е статистика, която показва присъствията на учениците в периода на обучението."
 	});
 
 	$('.demo-popover1 #popover-title').popover({
@@ -397,7 +397,7 @@ $(document).ready(function(){
 	/********************************************/
 
 	var kingTour = new Tour({
-		//basePath: "/dashboard/kingadmin-v1.5/", 
+		//basePath: "/dashboard/kingadmin-v1.5/",
 		steps: [
 			{
 				element: "#tour-searchbox",
