@@ -39,13 +39,13 @@ $(document).ready(function(){
 		// tabbed chart
 		$('#sales-stat-tab a').click(function(e) {
 			e.preventDefault();
-		
+
 			$chartType = $(this).attr('href');
 
 			// remove active state
 			$('#sales-stat-tab li').removeClass('active');
 			$(this).parents('li').addClass('active');
-			
+
 			if($chartType == '#week') {
 				chartWeek($placeholder);
 			}else if($chartType == '#month') {
@@ -138,7 +138,7 @@ $(document).ready(function(){
 			$('.secondary-stat-item #spark-stat3').sparkline(values2[2], params);
 
 		}
-		
+
 		sparklineStat();
 	}
 
@@ -309,7 +309,7 @@ $(document).ready(function(){
 	/*	CHART AND STAT DEMO PAGE
 	/********************************************/
 
-	if( $('#demo-line-chart').length > 0 ) 
+	if( $('#demo-line-chart').length > 0 )
 		chartYear( $('#demo-line-chart') );
 	if( $('#demo-area-chart').length > 0 )
 		chartWeek( $('#demo-area-chart') );
@@ -360,25 +360,25 @@ $(document).ready(function(){
 	function chartWeek(placeholder) {
 
 		var visit = [
-			[gt(2013, 10, 21), 188], [gt(2013, 10, 22), 205], [gt(2013, 10, 23), 250], [gt(2013, 10, 24), 230], [gt(2013, 10, 25), 245], [gt(2013, 10, 26), 260], [gt(2013, 10, 27), 290]
+			[gt(2016, 10, 20), 28], [gt(2016, 10, 21), 25], [gt(2016, 10, 24), 20], [gt(2016, 10, 25), 23], [gt(2016, 10, 26), 15], [gt(2016, 10, 27), 26], [gt(2016, 10, 28), 21]
 		];
 
 		var val = [
-			[gt(2013, 10, 21), 10], [gt(2013, 10, 22),20], [gt(2013, 10, 23),55], [gt(2013, 10, 24),50], [gt(2013, 10, 25),45], [gt(2013, 10, 26),60], [gt(2013, 10, 27),75]
+			[gt(2016, 10, 20), 25], [gt(2016, 10, 21),20], [gt(2016, 10, 24),15], [gt(2016, 10, 25), 20], [gt(2016, 10, 26), 15], [gt(2016, 10, 27),26], [gt(2016, 10, 28),20]
 		];
 
-		var plot = $.plot(placeholder, 
+		var plot = $.plot(placeholder,
 			[
 				{
 					data: visit,
-					label: "Visits",
+					label: "Брой ученици",
 					lines: {
 						show: true,
 						lineWidth: 2,
 						fill: true,
 					},
 					points: {
-						show: true, 
+						show: true,
 						lineWidth: 3,
 						fill: true,
 						fillColor: "#fafafa"
@@ -386,18 +386,18 @@ $(document).ready(function(){
 				},
 				{
 					data: val,
-					label: "Sales",
+					label: "Присъствие",
 					lines: {
 						show: true,
 						fill: true
 					},
 					points: {
-						show: true, 
+						show: true,
 						fill: true,
 						fillColor: "#fafafa"
 					},
 				}
-			], 
+			],
 
 			{
 			series: {
@@ -412,7 +412,7 @@ $(document).ready(function(){
 				shadowSize: 0
 			},
 			grid: {
-				hoverable: true, 
+				hoverable: true,
 				clickable: true,
 				borderWidth: 0,
 				tickColor: "#E4E4E4"
@@ -462,7 +462,7 @@ $(document).ready(function(){
 			[gt(2013, 10, 29), 125], [gt(2013, 10, 30), 110], [gt(2013, 10, 31), 130]
 		];
 
-		var plot = $.plot(placeholder, 
+		var plot = $.plot(placeholder,
 			[
 				{
 					data: visit,
@@ -479,17 +479,17 @@ $(document).ready(function(){
 					data: val,
 					label: "Sales"
 				}
-			], 
+			],
 
 			{
 				series: {
 					lines: {
 						show: true,
-						lineWidth: 2, 
+						lineWidth: 2,
 						fill: false
 					},
 					points: {
-						show: true, 
+						show: true,
 						lineWidth: 3,
 						fill: true,
 						fillColor: "#fafafa"
@@ -497,11 +497,11 @@ $(document).ready(function(){
 					shadowSize: 0
 				},
 				grid: {
-					hoverable: true, 
+					hoverable: true,
 					clickable: true,
 					borderWidth: 0,
 					tickColor: "#E4E4E4",
-					
+
 				},
 				colors: ["rgba(217,217,217, 0.3)", "#d7ea2b"],
 				yaxis: {
@@ -525,7 +525,7 @@ $(document).ready(function(){
 					content: '%s: %y'
 				}
 			}
-		); 
+		);
 
 	}
 
@@ -542,7 +542,7 @@ $(document).ready(function(){
 			[gt(2013, 8, 1), 452], [gt(2013, 9, 1), 552], [gt(2013, 10, 1), 600], [gt(2013, 11, 1), 680], [gt(2013, 12, 1), 750]
 		];
 
-		var plot = $.plot(placeholder, 
+		var plot = $.plot(placeholder,
 			[
 				{
 					data: visit,
@@ -553,17 +553,17 @@ $(document).ready(function(){
 					label: "Sales"
 
 				}
-			], 
+			],
 
 			{
 				series: {
 					lines: {
 						show: true,
-						lineWidth: 2, 
+						lineWidth: 2,
 						fill: false
 					},
 					points: {
-						show: true, 
+						show: true,
 						lineWidth: 3,
 						fill: true,
 						fillColor: "#fafafa"
@@ -571,11 +571,11 @@ $(document).ready(function(){
 					shadowSize: 0
 				},
 				grid: {
-					hoverable: true, 
+					hoverable: true,
 					clickable: true,
 					borderWidth: 0,
 					tickColor: "#E4E4E4",
-					
+
 				},
 				colors: ["#d9d9d9", "#5399D6"],
 				yaxis: {
@@ -616,7 +616,7 @@ $(document).ready(function(){
 			[gt(2013, 10, 21), 75], [gt(2013, 10, 22), 65], [gt(2013, 10, 23), 80], [gt(2013, 10, 24), 60], [gt(2013, 10, 25), 65], [gt(2013, 10, 26), 80], [gt(2013, 10, 27), 110]
 		];
 
-		var plot = $.plot(placeholder, 
+		var plot = $.plot(placeholder,
 			[
 				{
 					data: basic,
@@ -630,7 +630,7 @@ $(document).ready(function(){
 					data: platinum,
 					label: "Platinum"
 				}
-			], 
+			],
 			{
 				bars: {
 					show: true,
@@ -641,11 +641,11 @@ $(document).ready(function(){
 					fillColor: { colors: [ { opacity: 1 }, { opacity: 1 } ] }
 				},
 				grid: {
-					hoverable: true, 
+					hoverable: true,
 					clickable: true,
 					borderWidth: 0,
 					tickColor: "#E4E4E4",
-					
+
 				},
 				colors: ["#d9d9d9", "#5399D6", "#d7ea2b"],
 				yaxis: {
@@ -686,7 +686,7 @@ $(document).ready(function(){
 			[100, 1], [90, 2], [150, 3], [200, 4], [235, 5]
 		];
 
-		var plot = $.plot(placeholder, 
+		var plot = $.plot(placeholder,
 			[
 				{
 					data: basic,
@@ -700,7 +700,7 @@ $(document).ready(function(){
 					data: platinum,
 					label: "Platinum"
 				}
-			], 
+			],
 			{
 				bars: {
 					show: true,
@@ -712,11 +712,11 @@ $(document).ready(function(){
 					fillColor: { colors: [ { opacity: 1 }, { opacity: 1 } ] }
 				},
 				grid: {
-					hoverable: true, 
+					hoverable: true,
 					clickable: true,
 					borderWidth: 0,
 					tickColor: "#E4E4E4",
-					
+
 				},
 				colors: ["#d9d9d9", "#5399D6", "#d7ea2b"],
 				xaxis: {
@@ -775,7 +775,7 @@ $(document).ready(function(){
 			++i;
 		});
 
-		// insert checkboxes 
+		// insert checkboxes
 		var choiceContainer = $("#choices");
 		$.each( datasets, function( key, val ) {
 
@@ -807,11 +807,11 @@ $(document).ready(function(){
 				series: {
 					lines: {
 						show: true,
-						lineWidth: 2, 
+						lineWidth: 2,
 						fill: false
 					},
 					points: {
-						show: true, 
+						show: true,
 						lineWidth: 3,
 						fill: true,
 						fillColor: "#fafafa"
@@ -820,7 +820,7 @@ $(document).ready(function(){
 				},
 
 				grid: {
-					hoverable: true, 
+					hoverable: true,
 					clickable: true,
 					borderWidth: 0,
 					tickColor: "#E4E4E4",
@@ -855,7 +855,7 @@ $(document).ready(function(){
 			label: "United States",
 			data: [[1990, 18.9], [1991, 18.7], [1992, 18.4], [1993, 19.3], [1994, 19.5], [1995, 19.3], [1996, 19.4], [1997, 20.2], [1998, 19.8], [1999, 19.9], [2000, 20.4], [2001, 20.1], [2002, 20.0], [2003, 19.8], [2004, 20.4]]
 		}, {
-			label: "Russia", 
+			label: "Russia",
 			data: [[1992, 13.4], [1993, 12.2], [1994, 10.6], [1995, 10.2], [1996, 10.1], [1997, 9.7], [1998, 9.5], [1999, 9.7], [2000, 9.9], [2001, 9.9], [2002, 9.9], [2003, 10.3], [2004, 10.5]]
 		}, {
 			label: "United Kingdom",
@@ -875,11 +875,11 @@ $(document).ready(function(){
 			series: {
 				lines: {
 					show: true,
-					lineWidth: 2, 
+					lineWidth: 2,
 					fill: false
 				},
 				points: {
-					show: true, 
+					show: true,
 					lineWidth: 3,
 					fill: true,
 					fillColor: "#fafafa"
@@ -887,11 +887,11 @@ $(document).ready(function(){
 				shadowSize: 0
 			},
 			grid: {
-				hoverable: true, 
+				hoverable: true,
 				clickable: true,
 				borderWidth: 0,
 				tickColor: "#E4E4E4",
-				
+
 			},
 			legend: {
 				noColumns: 3,
@@ -975,12 +975,12 @@ $(document).ready(function(){
 				tickSize: [2, "second"],
 				tickFormatter: function (v, axis) {
 					var date = new Date(v);
-		 
+
 					if (date.getSeconds() % 20 == 0) {
 						var hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
 						var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
 						var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-		 
+
 						return hours + ":" + minutes + ":" + seconds;
 					} else {
 						return "";
@@ -1015,7 +1015,7 @@ $(document).ready(function(){
 		dataset = [
 			{ data: cpuData }
 		];
-		
+
 		$.plot(placeholder, dataset, plotOptions);
 
 		update();
@@ -1034,7 +1034,7 @@ $(document).ready(function(){
 			while (cpuData.length < totalPoints) {
 				var y = Math.random() * 100;
 				var temp = [now += updateInterval, y];
-		 
+
 				cpuData.push(temp);
 			}
 		}
@@ -1122,7 +1122,7 @@ $(document).ready(function(){
 				var colorScale = d3.scale.quantile()
 					.domain([0, buckets - 1, d3.max(data, function (d) { return d.value; })])
 					.range(colors);
-				
+
 				var svg = d3.select(placeholderHeat).append("svg")
 					.attr("width", width + margin.left + margin.right)
 					.attr("height", height + margin.top + margin.bottom)
@@ -1165,7 +1165,7 @@ $(document).ready(function(){
 
 				heatMap.transition().duration(1000).style("fill", function(d) { return colorScale(d.value); });
 				heatMap.append("title").text(function(d) { return d.value; });
-				  
+
 				var legend = svg.selectAll(".legend")
 					.data([0].concat(colorScale.quantiles()), function(d) { return d; })
 					.enter().append("g")
@@ -1191,7 +1191,7 @@ $(document).ready(function(){
 	if( $('#demo-d3-barchart').length > 0 ) {
 		var dataBar = "assets/js/plugins/stat/data-barchart.tsv"; // path/to/your/datafile.tsv
 		var placeholderBar = "#demo-d3-barchart"; // placeholder or container
-	
+
 		var marginBar = {top: 30, right: 10, bottom: 10, left: 10},
 			widthBar = 960 - marginBar.left - marginBar.right,
 			heightBar = 500 - marginBar.top - marginBar.bottom;
@@ -1211,11 +1211,11 @@ $(document).ready(function(){
 			.append("g")
 			.attr("transform", "translate(" + marginBar.left + "," + marginBar.top + ")");
 
-		d3.tsv(dataBar, 
+		d3.tsv(dataBar,
 			function(d) {
 				d.value = +d.value;
 				return d;
-			}, 
+			},
 
 			function(error, data) {
 				x.domain(d3.extent(data, function(d) { return d.value; })).nice();
