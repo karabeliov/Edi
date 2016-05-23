@@ -359,9 +359,9 @@ $(document).ready(function(){
 		var ringSound = new Audio();
 
 		if ( navigator.userAgent.match("Firefox/") ) {
-			ringSound.src = "media/bell-ringing.ogg";
+			ringSound.src = "../../../media/bell-ringing.ogg";
 		}else {
-			ringSound.src = "media/bell-ringing.mp3";
+			ringSound.src = "../../../media/bell-ringing.mp3";
 		}
 
 		function ringIt() {

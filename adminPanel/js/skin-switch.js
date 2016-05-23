@@ -48,8 +48,8 @@ jQuery(document).ready(function($) {
 
 	// check if skin has already applied before
 	var skin = localStorage.getItem('skin');
-	var skinLogo = localStorage.getItem('skinLogo');
-	var skinLogoDefault = '../AdminPanel/img/kingadmin-logo-white.png';
+	var skinLogo = '../../../img/kingadmin-logo-white.png';
+	var skinLogoDefault = '../../../img/kingadmin-logo-white.png';
 
 	if(skin != null) {
 		$('head').append('<link rel="stylesheet" href="' + skin + '" type="text/css" />');
@@ -75,7 +75,7 @@ jQuery(document).ready(function($) {
 		$('head').append('<link rel="stylesheet" href="' + $(this).attr('data-skin') + '" type="text/css" />');
 
 		if($(this).hasClass('fullbright')) {
-			skinLogo = '../AdminPanel/img/kingadmin-logo-white.png';
+			skinLogo = '../../../img/kingadmin-logo-white.png';
 		}else {
 			skinLogo = skinLogoDefault;
 		}
@@ -84,7 +84,7 @@ jQuery(document).ready(function($) {
 
 		// change logo at invoice page if necessary
 		if( ($(this).attr('data-skin') == 'css/skins/transparent.css') && $('.invoice-header img').length > 0 ) {
-			$('.invoice-header img').attr('src', '../AdminPanel/img/kingadmin-logo-white.png');
+			$('.invoice-header img').attr('src', '../adminPanel/img/kingadmin-logo-white.png');
 		}
 
 		localStorage.setItem('skin', $(this).attr('data-skin'));
@@ -119,7 +119,7 @@ jQuery(document).ready(function($) {
 				$(this).remove();
 		});
 
-		$('.logo img').attr('src', '../AdminPanel/img/kingadmin-logo-white.png');
+		$('.logo img').attr('src', '../../../img/kingadmin-logo-white.png');
 
 		localStorage.removeItem('skin');
 		localStorage.setItem('skinLogo', skinLogoDefault);
